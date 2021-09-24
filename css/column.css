@@ -17,6 +17,11 @@ body{
   padding: 0;
 }
 
+.container {
+  width: 1120px;
+  margin: 0 auto;
+}
+
 .fulled-container {
   padding: 0 20px;
 }

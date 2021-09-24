@@ -5,6 +5,14 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+  <!-- ICONS -->
+  <link href='https://unpkg.com/boxicons@2.0.9/css/boxicons.min.css' rel='stylesheet'>
+
+  <!-- FONTS -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
   <!-- STYLES -->
   <link rel="stylesheet" href="css/column.css">
   <link rel="stylesheet" href="css/style.css">
@@ -13,117 +21,189 @@
 </head>
 <body>
   
-  <!-- HEADER -->
-  <header id="header">
-    <div class="header-wrap row between align-center fulled-container">
-      <div class="logo-wrap">
-        <h1 class="logo">folio.</h1>
+  <!-- HERO -->
+  <section id="hero" class="heros">
+    <header id="header">
+      <div class="header-wrap row between align-center fulled-container">
+        <div class="logo-wrap">
+          <h1 class="logo"><a href="#">folio.</a></h1>
+        </div>
+        <nav class="nav-list-wrap">
+          <ul class="nav-list row align-center">
+            <li class="nav-list-item demo"> 
+              <a href="#">creative demos <i class='bx bx-chevron-down'></i></a>
+              <ul class="demo-dropdown">
+                <li class="demo-list-item"><a href="#">designer 1</a></li>
+                <li class="demo-list-item"><a href="#">designer 2</a></li>
+                <li class="demo-list-item"><a href="#">developer 1</a></li>
+                <li class="demo-list-item"><a href="#">developer 2</a></li>
+                <li class="demo-list-item"><a href="#">agency 1</a></li>
+                <li class="demo-list-item"><a href="#">agency 2</a></li>
+                <li class="demo-list-item"><a href="#">photographer 1</a></li>
+                <li class="demo-list-item"><a href="#">photographer 2</a></li>
+              </ul>
+            </li>
+            <li class="nav-list-item pages"> 
+              <a href="#">pages <i class='bx bx-chevron-down'></i></a>
+              <ul class="pages-dropdown">
+                <li class="demo-list-item"><a href="#">portfolio</a></li>
+                <li class="demo-list-item"><a href="#">portfolio details</a></li>
+                <li class="demo-list-item"><a href="#">about</a></li>
+                <li class="demo-list-item"><a href="#">contact</a></li>
+              </ul>
+            </li>
+            <li class="nav-list-item"> <a href="#">about me</a></li>
+            <li class="nav-list-item"> <a href="#">contact</a></li>
+            <li class="nav-list-item"> <a href="#">support</a></li>
+          </ul>
+        </nav>
       </div>
-      <nav class="nav-list-wrap">
-        <ul class="nav-list row">
-          <li class="nav-list-item">creative demos</li>
-          <li class="nav-list-item">pages</li>
-          <li class="nav-list-item">about me</li>
-          <li class="nav-list-item">contact</li>
-          <li class="nav-list-item">support</li>
-        </ul>
-      </nav>
+    </header>
+    <div class="dark-mode-wrap">
+      <button class="dark-mode">Dark</button>
     </div>
-  </header>
-  <!-- /HEADER -->
-
-  <!-- MAIN -->
-  <main id="main">
-
-    <!-- HERO SECTION -->
-    <section id="hero">
-      <div class="container">
-        <div class="hero-wrap">
-          <div class="hero-text">
-            <span class="profs">illustrator, fraphic designer traveller</span>
-            <h2 class="hero-title">
-              I design digital <br>
-              crafts for clients.
-            </h2>
-            <div class="hero-btn-wrap">
-              <a href="#works" class="hero-btn btn">explore works</a>
-            </div>
-          </div>
-          <div class="hero-image">
-            <img src="img/hero.png" alt="image">
-          </div>
+    <div class="hero-wrap row container">
+      <div class="hero-desc col-7">
+        <span class="prof section-span">
+          ILLUSTRATOR, GRAPHIC DESIGNER, TRAVELER
+        </span>
+        <h2 class="hero-title title">
+          I design digital <br> crafts for clients.
+        </h2>
+        <div class="hero-btn-wrap">
+          <a href="#" class="hero-btn btn">Explore works <i class='bx bx-arrow-back'></i></a>
         </div>
       </div>
-    </section>
-    <!-- /HERO SECTION -->
+      <div class="hero-img-wrap col-5">
+        <img src="img/hero.png" alt="hero">
+      </div>
+    </div>
+  </section>
+  <!-- /HERO -->
 
-    <!-- WORKS SECTION -->
-    <section id="works">
-      <div class="fulled-container">
-        <div class="works-wrap">
-          <div class="works-links">
-            <a href="#">all works</a>
-            <a href="#">branding</a>
-            <a href="#">ux design</a>
-            <a href="#">photography</a>
-          </div>
-          <div class="works-photos">
-            <div class="photo-col1">
-              <img src="img/col1-image1.jpg" alt="image">
-              <img src="img/col1-image2.jpg" alt="image">
-              <img src="img/col1-image3.jpg" alt="image">
-              <img src="img/col1-image4.jpg" alt="image">
-              <img src="img/col1-image5.jpg" alt="image">
-              <img src="img/col1-image6.jpg" alt="image">
-              <img src="img/col1-image7.jpg" alt="image">
-              <img src="img/col1-image8.jpg" alt="image">
-            </div>
-            <div class="photo-col">
-              <div class="photo-col2">
-                <img src="img/col2-image1.jpg" alt="image">
-                <img src="img/col2-image2.jpg" alt="image">
-                <img src="img/col2-image3.jpg" alt="image">
-                <img src="img/col2-image4.jpg" alt="image">
-                <img src="img/col2-image5.jpg" alt="image">
-                <img src="img/col2-image6.jpg" alt="image">
-            </div>
-          </div>
+  <!-- WORKS -->
+  <section id="works">
+    <ul class="work-links row">
+      <li class="work-link work-link--active"><a href="#">all work</a></li>
+      <li class="work-link"><a href="#">branding</a></li>
+      <li class="work-link"><a href="#">ux design</a></li>
+      <li class="work-link"><a href="#">photography</a></li>
+    </ul>
+    <div class="works-wrap fulled-container">
+      <div class="block">
+        <div class="block-desc">
+          <h3 class="block-title">Web</h3>
+          <p class="block-p"><a href="#">Perfumed</a></p>
         </div>
       </div>
-    </section>
-    <!-- /WORKS SECTION -->
-
-    <!-- CONTACT SECTION -->
-    <section id="contact">
-      <div class="container">
-        <div class="contact-wrap">
-          <span class="available">
-            available for freelance projects
-          </span>
-          <h2 class="contact-title">
-            Do you have illustration <br>
-            project? Let's talk
-          </h2>
-          <div class="contact-btn-wrap">
-            <a href="#" class="contact-btn btn">
-              let's talk now
-            </a>
-          </div>
+      <div class="block">
+        <div class="block-desc">
+          <h3 class="block-title">Photography</h3>
+          <p class="block-p"><a href="#">Travel App</a></p>
         </div>
       </div>
-    </section>
-    <!-- /CONTACT SECTION -->
+      <div class="block">
+        <div class="block-desc">
+          <h3 class="block-title">Marketing</h3>
+          <p class="block-p"><a href="#">Shopper</a></p>
+        </div>
+      </div>
+      <div class="block">
+        <div class="block-desc">
+          <h3 class="block-title">branding</h3>
+          <p class="block-p"><a href="#">Candy Store</a></p>
+        </div>
+      </div>
+      <div class="block">
+        <div class="block-desc">
+          <h3 class="block-title">branding</h3>
+          <p class="block-p"><a href="#">Travel App</a></p>
+        </div>
+      </div>
+      <div class="block">
+        <div class="block-desc">
+          <h3 class="block-title">branding</h3>
+          <p class="block-p"><a href="#">Ice Cream</a></p>
+        </div>
+      </div>
+      <div class="block">
+        <div class="block-desc">
+          <h3 class="block-title">branding</h3>
+          <p class="block-p"><a href="#">Camera</a></p>
+        </div>
+      </div>
+      <div class="block">
+        <div class="block-desc">
+          <h3 class="block-title">branding</h3>
+          <p class="block-p"><a href="#">Smart watch</a></p>
+        </div>
+      </div>
+      <div class="block">
+        <div class="block-desc">
+          <h3 class="block-title">marketing</h3>
+          <p class="block-p"><a href="#">Smart film</a></p>
+        </div>
+      </div>
+      <div class="block">
+        <div class="block-desc">
+          <h3 class="block-title">marketing</h3>
+          <p class="block-p"><a href="#">Coffee Cream</a></p>
+        </div>
+      </div>
+      <div class="block">
+        <div class="block-desc">
+          <h3 class="block-title">Ux-design</h3>
+          <p class="block-p"><a href="#">Candy store</a></p>
+        </div>
+      </div>
+      <div class="block">
+        <div class="block-desc">
+          <h3 class="block-title">ux-design</h3>
+          <p class="block-p"><a href="#">Caffee Roast</a></p>
+        </div>
+      </div>
+      <div class="block">
+        <div class="block-desc">
+          <h3 class="block-title">marketing</h3>
+          <p class="block-p"><a href="#">Noodles</a></p>
+        </div>
+      </div>
+      <div class="block">
+        <div class="block-desc">
+          <h3 class="block-title">Ux-dsign</h3>
+          <p class="block-p"><a href="#"> Laptop Desk</a></p>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- /WORKS -->
 
-  </main>
-  <!-- /MAIN -->
-  
+  <!-- TALK -->
+  <section id="talk">
+    <div class="talk-wrap center container">
+      <span class="freelance section-span">AVAILABLE FOR FREELANCE PROJECTS</span>
+      <h2 class="talk-title">Do you have illustration <br> project? Let's talk.</h2>
+      <div class="talk-btn-wrap">
+        <a href="#" class="talk-btn btn"><i class='bx bxs-chat'></i> Let's talk now</a>
+      </div>
+    </div>
+  </section>
+  <!-- /TALK -->
+
   <!-- FOOTER -->
-  <footer id="footer">
-    <h3 class="copyright">
-      &copy; 2020 all rights reserved 
-    </h3>
+  <footer id="site-footer">
+    <div class="footer-wrap container center">
+      <small class="copyright">&copy; 2020 ALL RIGHT RESEVED</small>
+    </div>
   </footer>
   <!-- /FOOTER -->
+  
+  <script>
+    let nightMode = document.querySelector('.dark-mode')
+    nightMode.addEventListener('click', function(){
+      document.body.classList.toggle('night-mode')
+    })
+  </script>
 
 </body>
 </html>
